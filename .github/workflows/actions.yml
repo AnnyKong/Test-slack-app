@@ -2,7 +2,8 @@ name: mention-to-slack-actions
 
 on:
   pull_request:
-    types: [opened, reopened, edited, closed, review_requested]
+    tags:
+      - bug
   pull_request_review:
     types: [submitted]
   pull_request_review_comment:
